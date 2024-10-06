@@ -34,6 +34,7 @@
 </head>
 
 <body>
+  <confetti-container id="confetti">
   <div id="demo">
     <h1>counter-ap</h1>
     <!-- this is going to do whatever the tag's defaults are -->
@@ -42,8 +43,9 @@
     <h2>Slot usage</h2>
     <counter-ap data-accent="2" data-primary="17"><div>Sample slot content</div></counter-ap>
     <h2>Property usage</h2>
-    <counter-ap id="example" title="Sample property title"></counter-ap>
+    <counter-ap id="example" title="Sample property title" counter="16" min="10" max="25"></counter-ap>
   </div>
+</confetti-container>
   <script type="module" src="./src/counter-ap.js"></script>
 
   <!-- Take HAX, the Web and you further down the rabbit hole -->
@@ -126,5 +128,6 @@
       </ul>
     </div>
   </details>
+
 </body>
 </html>
